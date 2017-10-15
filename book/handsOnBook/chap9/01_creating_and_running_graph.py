@@ -19,7 +19,7 @@ def demo_one(x, y, f):
 
 
 def demo_two(x, y, f):
-    '''
+    '''B
 the session is automatically closed at the end of the block.
     '''
     with tf.Session() as sess:
@@ -28,11 +28,10 @@ the session is automatically closed at the end of the block.
         result = f.eval()
         print result
 
-
     # equivalent
-    init = tf.global_variables_initializer() # prepare an init node
+    init = tf.global_variables_initializer()  # prepare an init node
     with tf.Session() as sess:
-        init.run() # actually initialize all the variables
+        init.run()  # actually initialize all the variables
         result = f.eval()
 
 
