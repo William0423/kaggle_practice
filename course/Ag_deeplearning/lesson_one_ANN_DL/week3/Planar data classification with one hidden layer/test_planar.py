@@ -156,5 +156,5 @@ def layer_sizes(X, Y):
 # print("b2 = " + str(parameters["b2"]))
 
 
-for i in range(0, 2):
+for i in xrange(0, 2):
     print i
